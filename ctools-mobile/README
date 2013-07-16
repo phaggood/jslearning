@@ -1,0 +1,17 @@
+This directory contains the angular/html5/js-client and goovlet-servlet combo to test the ctools-mobile sample application for the Hackathon
+
+To start the server:
+
+groovy jettystarter.groovy &
+
+to run the app:
+
+localhost:9090/index.html
+
+to test a script
+
+localhost:9090/somescript.groovy
+
+Note: 
+ scripts go into webapp/scripts
+ static resources (html, js, etc) go into webapp/static
