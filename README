@@ -1,0 +1,29 @@
+ctools-mobile
+- mobile ctools app; client and server (groovlet - start server with 'groovy startserver.groovy')
+
+js-tutorial
+code and examples from 
+
+prj00x
+projects from tutorial above
+
+
+
+==== Resources =====
+
+Groovlet + Rest
+https://github.com/eddelplus/GRESTlet
+
+Angular tutorials
+
+HowTo for uploading groovlets to GAE
+http://mrhaki.blogspot.com/2009/08/simple-groovlet-to-read-and-display.html
+
+SteamingJSONBuilder docs
+http://groovy.codehaus.org/gapi/groovy/json/StreamingJsonBuilder.html
+http://groovy.329449.n5.nabble.com/How-to-mix-list-map-with-StreamingJsonBuilder-td5058003.html
+
+Groovlets and sessions
+http://groovy.codehaus.org/Groovlets
+
+
