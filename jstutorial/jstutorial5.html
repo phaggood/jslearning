@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+<script type="text/javascript">
+<!-- Hide Javascript
+
+// Parent (i.e. div)
+// -> Child  (ul, li, etc)
+
+
+function editNodeText(id, newText){
+    var node = document.getElementById(id);
+    // while there exist children on 'node')
+    while(node.firstChild) {
+        node.removeChild(node.firstChild);
+    }
+    node.appendChild(document.createTextNode(newText)) ;
+
+    // note - to do this with Css you'd change the id
+    document.getElementById(id).style.color="red";
+    document.getElementById(id).style.position="fixed";
+    document.getElementById(id).style.top="100px";
+
+
+}
+
+
+function editNodeText2(id,newText) {
+    // get an element by id
+    var node = document.getElementById(id);
+    node.removeChild(node.childNodes[0]);
+    // choose position - can use firstChild and lastChild too
+    node.childNodes[2].nodeValue=newText;
+    // create and add new element
+    var newNode = document.createElement('hr');
+    node.appendChild(newNode);
+    // create and add new text node
+    var randTetNode = document.createTextNode("I an random");
+    node.appendChild(randTextNode);
+}
+
+-->
+</script>
+
+
+<noscript>
+    <h3>This site requires javascript</h3>
+</noscript>
+
+</head>
+
+<body>
+
+<span id="spanEx" onclick="editNodeText('spanEx', 'New Text is here')">Change Text</span>
+
+<div id="divEx" onclick="editNodeText2('divEx','New Text in Div')">
+    <b>Some bold text</b>
+    <i>Some italic text</i>
+</div>
+
+
+</body>
+</html>
