@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f298d8e5-93a4-43da-8f0a-5eb4394178a8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/auth.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/controller/SitesController.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/ctm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/logout.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/scripts/serverinfo.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/sites.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/usersites.groovy" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/view/loginform.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/view/sites.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/webapps/GRESTletSample.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/AuthController.js" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/AuthController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/README" afterPath="$PROJECT_DIR$/../ctools-mobile/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/SitesController.js" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/SitesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/app.js" afterPath="$PROJECT_DIR$/../ctm/app/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/controllers.js" afterPath="$PROJECT_DIR$/../ctm/app/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/js/ctm.js" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/js/ctm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/directives.js" afterPath="$PROJECT_DIR$/../ctm/app/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/filters.js" afterPath="$PROJECT_DIR$/../ctm/app/js/filters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/index.html" afterPath="$PROJECT_DIR$/../ctm/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/index.html" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jstutorial/jstutorial5.html" afterPath="$PROJECT_DIR$/../jstutorial/jstutorial5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jstutorial/jstutorial6.html" afterPath="$PROJECT_DIR$/../jstutorial/jstutorial6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/view/main.html" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/view/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/services.js" afterPath="$PROJECT_DIR$/../ctm/app/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/groovy/sites.groovy" afterPath="$PROJECT_DIR$/../ctm/groovy/sites.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/groovy/siteslist.groovy" afterPath="$PROJECT_DIR$/../ctm/groovy/siteslist.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ctools-mobile/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../jstutorial/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../jstutorial/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f298d8e5-93a4-43da-8f0a-5eb4394178a8" name="Default" comment="" />
     <ignored path="prj001.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374415764569" ignored="false" />
@@ -40,7 +9,7 @@
     <file path="$PROJECT_DIR$/../ctools-mobile/view/loginform.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373895748581" ignored="false" />
     <file path="/loginform.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373895748581" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/controller/SitesController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373974249575" ignored="false" />
-    <file path="/SitesController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679343256" ignored="false" />
+    <file path="/SitesController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374680856105" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/index.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373895388743" ignored="false" />
     <file path="/index.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679654879" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/ctm.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373895559529" ignored="false" />
@@ -56,17 +25,17 @@
     <file path="/logout.groovy" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373973880167" ignored="false" />
     <file path="/startjetty.groovy" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1373969866188" ignored="false" />
     <file path="/main.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374027542619" ignored="false" />
-    <file path="/AuthController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679175874" ignored="false" />
+    <file path="/AuthController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374681168895" ignored="false" />
     <file path="/chef_site-newSiteConfirm.vm" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374158595851" ignored="false" />
     <file path="/jstutorial_overview.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374417678019" ignored="false" />
     <file path="/jstutorial5.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374420720931" ignored="false" />
     <file path="/jstutorial6.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374424003118" ignored="false" />
     <file path="/jstutorial7.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374424530434" ignored="false" />
     <file path="$PROJECT_DIR$/../ctm/app/index-async.html" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374676312535" ignored="false" />
-    <file path="$PROJECT_DIR$/../ctm/app/js/SitesController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679349921" ignored="false" />
-    <file path="$PROJECT_DIR$/../ctm/app/js/AuthController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679219540" ignored="false" />
-    <file path="$PROJECT_DIR$/../ctm/app/js/factory.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679812329" ignored="false" />
-    <file path="/factory.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679801301" ignored="false" />
+    <file path="$PROJECT_DIR$/../ctm/app/js/SitesController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374680877542" ignored="false" />
+    <file path="$PROJECT_DIR$/../ctm/app/js/AuthController.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374681336982" ignored="false" />
+    <file path="$PROJECT_DIR$/../ctm/app/js/factory.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374680516784" ignored="false" />
+    <file path="/factory.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374680501041" ignored="false" />
     <file path="/services.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374677895913" ignored="false" />
     <file path="$PROJECT_DIR$/../ctm/app/js/ctm.js" changelist="f298d8e5-93a4-43da-8f0a-5eb4394178a8" time="1374679547891" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
