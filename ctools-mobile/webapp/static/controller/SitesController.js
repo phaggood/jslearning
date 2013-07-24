@@ -5,8 +5,9 @@
  * Time: 9:27 AM
  * To change this template use File | Settings | File Templates.
  */
-CToolsMobile.controller('SitesController', function ($scope, $location, $routeParams, SiteModel) {
-    var sites = SiteModel.getSites();  // ajax.getSites()
+CToolsMobile.controller('SitesController', function ($scope, $location, $routeParams, $cookies, SiteModel) {
+    var sites = [site1, site2, site3, site4, site5] ;   // ajax.getSites()
+    var currentSession   = $cookies.sessionId;        // used for each call
 
     $scope.sites = sites;
     $scope.selectedSiteId = $routeParams.siteId;

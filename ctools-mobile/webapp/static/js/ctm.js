@@ -10,16 +10,26 @@ var ctmConfig = function($routeProvider) {
     $routeProvider
         .when('/', {
             controller: 'SitesController',
+            templateUrl: 'view/main.html'
+        })
+        .when('/sites', {
+            controlller: 'SitesController',
             templateUrl: 'view/sites.html'
         })
         .when('/site/:siteId', {
             controller: 'SitesController',
             templateUrl: 'view/site.html'
         })
+        .when('/login', {
+            controller: 'AuthController',
+            templateUrl: 'view/loginForm'
+        })
         .when('/login/:username/:password', {
             controller: 'AuthController',
-            templateUrl: 'view/login.html'
+        })
+        .when('/logout', {
+            controller: 'AuthController',
         })
     ; };
-var CtoolsMobile = angular.module('CToolsMobile', []).
-config(ctmConfig);
+
+var CToolsMobile = angular.module('CToolsMobile', [ 'ngCookies']). config(CToolsMobile);

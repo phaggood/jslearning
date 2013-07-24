@@ -2,22 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prj001/index.html" afterPath="$PROJECT_DIR$/../prj001/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/view/sites.html" afterPath="$PROJECT_DIR$/../ctools-mobile/view/sites.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/auth.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/controller/SitesController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/ctm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/logout.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/scripts/serverinfo.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/sites.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/usersites.groovy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/view/loginform.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/view/sites.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ctools-mobile/webapps/GRESTletSample.war" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/AuthController.js" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/AuthController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/README" afterPath="$PROJECT_DIR$/../ctools-mobile/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/SitesController.js" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/controller/SitesController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/app.js" afterPath="$PROJECT_DIR$/../ctm/app/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/controllers.js" afterPath="$PROJECT_DIR$/../ctm/app/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/js/ctm.js" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/js/ctm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/directives.js" afterPath="$PROJECT_DIR$/../ctm/app/js/directives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/filters.js" afterPath="$PROJECT_DIR$/../ctm/app/js/filters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/index-async.html" afterPath="$PROJECT_DIR$/../ctm/app/index-async.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/index.html" afterPath="$PROJECT_DIR$/../ctm/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/index.html" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jstutorial5.html" afterPath="$PROJECT_DIR$/jstutorial5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jstutorial6.html" afterPath="$PROJECT_DIR$/jstutorial6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/webapp/static/view/main.html" afterPath="$PROJECT_DIR$/../ctools-mobile/webapp/static/view/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctm/app/js/services.js" afterPath="$PROJECT_DIR$/../ctm/app/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../ctools-mobile/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../ctools-mobile/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../prj001/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../prj001/.idea/workspace.xml" />
     </list>
     <ignored path="jstutorial.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373894115205" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373887766124" ignored="false" />
+    <file path="/Dummy.txt" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374415764442" ignored="false" />
     <file path="/sites.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373894345858" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/view/loginform.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895748581" ignored="false" />
     <file path="/loginform.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895748581" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/controller/SitesController.js" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895841766" ignored="false" />
-    <file path="/SitesController.js" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895824368" ignored="false" />
+    <file path="/SitesController.js" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374674830305" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/index.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895388743" ignored="false" />
-    <file path="/index.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895388743" ignored="false" />
+    <file path="/index.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374675137767" ignored="false" />
     <file path="$PROJECT_DIR$/../ctools-mobile/ctm.js" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895559529" ignored="false" />
     <file path="/ctm.js" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1373895545116" ignored="false" />
+    <file path="/jstutorial_overview.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374417678019" ignored="false" />
+    <file path="/jstutorial5.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374420720811" ignored="false" />
+    <file path="/jstutorial6.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374424002961" ignored="false" />
+    <file path="/jstutorial7.html" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374424530434" ignored="false" />
+    <file path="/AuthController.js" changelist="86dcde02-cae9-4f7b-9c4b-0f3084d97ada" time="1374666130875" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +68,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../prj001/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="17" selection-start="268" selection-end="268" vertical-scroll-proportion="0.18987341">
+            <state line="8" column="17" selection-start="268" selection-end="268" vertical-scroll-proportion="-5.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jstutorial6.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jstutorial6.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.56962025">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jstutorial7.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jstutorial7.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="65" selection-start="252" selection-end="252" vertical-scroll-proportion="-6.875">
               <folding />
             </state>
           </provider>
@@ -65,13 +114,18 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/../prj001/index.html" />
+        <option value="$PROJECT_DIR$/jstutorial_overview.html" />
+        <option value="$PROJECT_DIR$/jstutorial4.html" />
+        <option value="$PROJECT_DIR$/jstutorial5.html" />
+        <option value="$PROJECT_DIR$/jstutorial7.html" />
+        <option value="$PROJECT_DIR$/jstutorial6.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
+    <option name="x" value="592" />
     <option name="y" value="22" />
-    <option name="width" value="1404" />
+    <option name="width" value="818" />
     <option name="height" value="804" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -130,10 +184,16 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../prj001/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ctm" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -142,6 +202,13 @@
       <option name="filePath" />
       <option name="scope" value="ALL" />
       <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="0" />
@@ -173,13 +240,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="22" width="1404" height="804" extended-state="0" />
-    <editor active="false" />
+    <frame x="592" y="22" width="818" height="804" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2553459" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -257,7 +324,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../prj001/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="17" selection-start="268" selection-end="268" vertical-scroll-proportion="0.18987341">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jstutorial5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="68" selection-start="174" selection-end="174" vertical-scroll-proportion="0.2173913">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jstutorial4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="71" selection-start="481" selection-end="481" vertical-scroll-proportion="0.7246377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../prj001/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="268" selection-end="268" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jstutorial7.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="65" selection-start="252" selection-end="252" vertical-scroll-proportion="-6.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jstutorial6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.56962025">
           <folding />
         </state>
       </provider>

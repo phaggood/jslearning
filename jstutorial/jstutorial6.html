@@ -8,43 +8,6 @@
 <script type="text/javascript">
 <!-- Hide Javascript
 
-function divideMe(helpId){
-    var topVar = document.getElementById("topvar").value;
-    var botVar = document.getElementById("botvar").value;
-
-    try {
-        // is there a value in both inputs
-        if (!topVar || !botVar){
-            throw new Error("enter both vals");
-        }
-        // are both numbers
-        else if(isNaN(topVar) || isNaN(botVar)) {
-            throw new Error("both must be nums");
-        }
-        // is bottom value a zero
-        else if(botVar == 0){
-            throw new Error("Can't divide by zero");
-        }
-
-        // is there aleady val is span helpId?  if so remove all fist
-        if (helpId != null) {
-            while (helpId.firstChild){
-                helpId.removeChild(helpId.firstChild);
-
-            }
-        }
-        var answer = topVar + " / " + botVar + " = " + topVar/botVar;
-        helpId.appendChild(document.createTextNode(answer));
-    }
-    catch (errMsg) {
-        if (helpId != null) {
-            while (helpId.firstChild){
-                helpId.removeChild(helpId.firstChild);
-            }
-            helpId.appendChild(document.createTextNode(errMsg));
-        }
-    }
-}
 
 -->
 </script>
@@ -59,10 +22,6 @@ function divideMe(helpId){
 <body>
 
 <div>
-    End div numbers:<br>
-    <input id="topvar" name="text" size="10"/><br/>
-    <input id="botvar" name="text" size="10" onblur="divideMe(document.getElementById('answer'))"/> <br/>
-    <span id="answer"></span>
 
 
 </div>
