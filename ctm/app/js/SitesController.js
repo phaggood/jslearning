@@ -9,6 +9,8 @@
 CToolsMobile.controller('SitesController', function ($scope, $location, $routeParams, $cookies, siteService) {
 
     var currentSession   = $cookies.sessionId;        // used for each call
+    var siteId = $routeParams.siteId
+
     $scope.selectedSiteId = $routeParams.siteId;
 
     $scope.sites = siteService.getSites(currentSession);

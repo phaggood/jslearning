@@ -56,8 +56,9 @@ ctoolsMobile.factory('authService', function($http) {
 
         // expire ths session on the server
         logout: function(sessid) {
-
+            return $http.get('http://localhost:9090/user.groovy/:id').then(result) {
+                return result.data;
+            };
         }
-
     }
 });

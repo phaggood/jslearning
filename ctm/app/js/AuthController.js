@@ -36,4 +36,4 @@ CToolsMobile.controller('AuthController', function ($scope, $location, $routePar
      $scope.validateLogin = function (username, password) {
             return (!username && !password);
      }
-};
+});

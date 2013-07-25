@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="CToolsMobile">
+    <head>
+        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js'>
+        </script>
+        <script src='ctm.js'>
+        </script>
+        <script src='controller/SiteController.js'>
+        </script>
+        <script src='controller/Assignments.js'>
+        </script>
+        <script src='model/SiteModel.js'>
+        </script>
+        <script src='model/AssignmentModel.js'>
+        </script>
+        <link rel='stylesheet' href='css/styles.css'>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <title>CTools Mobile</title>
+    </head>
+    <body>
+    <!--views go here -->
+
+
+        <script src="bootstrap/js/bootstrap.min.js">
+        </script>
+    </body>
+</html>
