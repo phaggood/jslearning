@@ -1,25 +1,27 @@
-<!doctype html>
-<html lang="en" ng-app="ctoolsMobile">
-<head>
-  <meta charset="utf-8">
-  <title>My AngularJS App</title>
-  <link rel="stylesheet" href="css/app.css"/>
-</head>
-<body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+<!DOCTYPE html>
+<html ng-app="CToolsMobile">
+    <head>
+        <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js'>
+        </script>
+        <script src='ctm.js'>
+        </script>
+        <script src='controller/SiteController.js'>
+        </script>
+        <script src='controller/Assignments.js'>
+        </script>
+        <script src='model/SiteModel.js'>
+        </script>
+        <script src='model/AssignmentModel.js'>
+        </script>
+        <link rel='stylesheet' href='css/styles.css'>
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <title>CTools Mobile</title>
+    </head>
+    <body>
+    <!--views go here -->
 
-  <div ng-view></div>
 
-  <div>Angular seed app: v<span app-version></span></div>
-
-  <!-- In production use:
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-  -->
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/ctm.js"></script>
-  <script src="js/factory.js"></script>
-  <body>
+        <script src="bootstrap/js/bootstrap.min.js">
+        </script>
+    </body>
 </html>
