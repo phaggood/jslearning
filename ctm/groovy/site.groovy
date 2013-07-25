@@ -1,15 +1,11 @@
 import groovy.json.*
-import GroovyData.groovy
+evaluate(new File("./groovy/GroovyData.groovy"))
 
 response.setContentType('application/json')
 
 def siteId = params.siteId
 def sessionId = params.sessionId
-
-// define array of dummy sites; this will be replaced with direct call to CTools for a sitelist
-// i.e. def sites = getURL(ctools_url+'/sites?sessionID=${getSessionID()}')
-
-def site = GroovyData.getSite(siteId)
+def site = getSite(siteId)
 
 def jsonWriter = new StringWriter()
 def jsonBuilder = new StreamingJsonBuilder(jsonWriter)

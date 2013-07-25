@@ -1,4 +1,7 @@
-sites = [
+public class GData {
+
+
+def sites = [
         s1:[id:'s001',name: 'Site001', description: 'Accounting', stype:'course'],
         s2:[id:'s002', name: 'Site002', description: 'Pottery', stype:'course'],
         s3:[id:'s003',name: 'Site003', description: 'Astronomy', stype:'course'],
@@ -6,14 +9,14 @@ sites = [
         ]
 
 
-users = [
+def users = [
                 bjones :[password:'pword', fname: 'Bob' , lname: 'Jones', sessId:'s001', sites:['s1', 's2']       ],
                 jdoe   :[password:'pword', fname: 'Jane', lname: 'Doe',   sessId:'s002', sites:['s1', 's2', 's4'] ],
                 mbill  :[password:'pword', fname: 'Mr'  , lname: 'Bill',  sessId:'s004', sites:['s4']             ]
             ]
 
 
-tools = [
+def tools = [
                 t1  :[title:'Home'         , description: 'Main tool'           , sites:['s1', 's2']       ],
                 t2  :[title:'Announcements', description: 'System Announcements', sites:['s1', 's2', 's4'] ],
                 t3  :[title:'Gradebook'    , description: 'Grades'              , sites:['s4']             ],
@@ -23,7 +26,7 @@ tools = [
                 t7  :[title:'Forums'       , description: 'Site Forums'         , sites:['s4']             ]
 ]
 
-siteTools = [
+def siteTools = [
         s1:['t1', 't2', 't3', 't4'],
         s2:['t1', 't3', 't4', 't5'],
         s3:['t1', 't3', 't6','t7'],
@@ -49,6 +52,15 @@ def getUserBySessionId(String sessId) {
         }
     }
     return user
+}
+
+def getUserByUserId(String userid) {
+    def result = [:]
+    def user = users.get(userid) // userid is same as username here
+    if (user) {
+       result << [firstname:user.fname, lastname:user.lname, userid:userid]
+    }
+    return result
 }
 
 // get all sites valid by session id
@@ -95,4 +107,5 @@ def getSiteTools(String siteId) {
     }
     return result
 
+}
 }
