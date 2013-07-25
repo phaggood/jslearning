@@ -7,7 +7,8 @@ code and examples from
 prj00x
 projects from tutorial above
 
-
+ctm
+- current development branch (replaces ctools-mobile above)
 
 ==== Resources =====
 
@@ -19,11 +20,21 @@ Angular tutorials
 HowTo for uploading groovlets to GAE
 http://mrhaki.blogspot.com/2009/08/simple-groovlet-to-read-and-display.html
 
-SteamingJSONBuilder docs
+StreamingJSONBuilder docs
 http://groovy.codehaus.org/gapi/groovy/json/StreamingJsonBuilder.html
 http://groovy.329449.n5.nabble.com/How-to-mix-list-map-with-StreamingJsonBuilder-td5058003.html
 
-Groovlets and sessions
+Groovy and Groovlets
 http://groovy.codehaus.org/Groovlets
+http://groovy.codehaus.org/Groovy+as+script
+http://groovy.codehaus.org/JN2525-Classes
+http://mrhaki.blogspot.com/2009/10/groovy-goodness-groovlets-as.html
+http://kousenit.wordpress.com/2012/03/06/writing-json-output-from-a-groovlet/
+http://stackoverflow.com/questions/14196454/groovy-find-a-key-in-a-map-and-return-its-value
+http://blog.adaptivesoftware.biz/2009/04/groovy-maps.html
+http://groovy.codehaus.org/JN1035-Maps
+
+GIT
+https://help.github.com/articles/fork-a-repo
 
 
