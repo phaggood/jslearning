@@ -1,4 +1,5 @@
 import groovy.json.*
+
 def gData = new GData();
 
 response.setContentType('application/json')
@@ -8,7 +9,13 @@ def jsonBuilder = new StreamingJsonBuilder(jsonWriter)
 
 def userId = params.userId
 def sessionId = params.sessionId
-def user = gData.getUserByUserId(userId)
+
+def usr
+if (userId) {
+    usr = gData.getUserByUserId(userId)
+} else {
+    usr = gData.getUserBySessionId(sessionId)
+}
 
 def root = jsonBuilder {
     Header {
@@ -18,14 +25,15 @@ def root = jsonBuilder {
         "Date" new Date().format("dd.MM.yyyy HH:mm")
     }
 
-    Data (
 
-        user ({
-            "firstname" user.fname
-            "lastname" user.lname
-            "sessionId" sessionId
+    Data (
+         ({
+            firstname usr.firstname
+            lastname usr.lastname
+            id usr.userid
         })
     )
+
 }
 
 

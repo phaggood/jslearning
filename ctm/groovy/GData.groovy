@@ -1,57 +1,73 @@
 public class GData {
 
 
-def sites = [
-        s1:[id:'s001',name: 'Site001', description: 'Accounting', stype:'course'],
-        s2:[id:'s002', name: 'Site002', description: 'Pottery', stype:'course'],
-        s3:[id:'s003',name: 'Site003', description: 'Astronomy', stype:'course'],
-        s4:[id:'s004',name: 'Site004', description: 'Engineering', stype:'course']
+ def sites = [
+        s001:[name: 'Site001', description: 'Accounting', stype:'course'],
+        s002:[name: 'Site002', description: 'Pottery', stype:'course'],
+        s003:[name: 'Site003', description: 'Astronomy', stype:'course'],
+        s004:[name: 'Site004', description: 'Engineering', stype:'course']
         ]
 
 
-def users = [
-                bjones :[password:'pword', fname: 'Bob' , lname: 'Jones', sessId:'s001', sites:['s1', 's2']       ],
-                jdoe   :[password:'pword', fname: 'Jane', lname: 'Doe',   sessId:'s002', sites:['s1', 's2', 's4'] ],
-                mbill  :[password:'pword', fname: 'Mr'  , lname: 'Bill',  sessId:'s004', sites:['s4']             ]
+ def users = [
+                bjones :[password:'pword', fname: 'Bob' , lname: 'Jones', sessId:'ss001', sites:['s001', 's002']       ],
+                jdoe   :[password:'pword', fname: 'Jane', lname: 'Doe',   sessId:'ss002', sites:['s001', 's002', 's004'] ],
+                tdoc   :[password:'pword', fname: 'Doctor', lname: 'Who', sessId:'ss003', sites:['s001', 's004'] ],
+                mbill  :[password:'pword', fname: 'Mr'  , lname: 'Bill',  sessId:'ss004', sites:['s003','s004']             ]
             ]
 
 
-def tools = [
-                t1  :[title:'Home'         , description: 'Main tool'           , sites:['s1', 's2']       ],
-                t2  :[title:'Announcements', description: 'System Announcements', sites:['s1', 's2', 's4'] ],
-                t3  :[title:'Gradebook'    , description: 'Grades'              , sites:['s4']             ],
-                t4  :[title:'Chat'         , description: 'Chat server'         , sites:['s4']             ],
-                t5  :[title:'Resources'    , description: 'File Resources'      , sites:['s4']             ],
-                t6  :[title:'Gradebook2'   , description: 'Student Grades'      , sites:['s4']             ],
-                t7  :[title:'Forums'       , description: 'Site Forums'         , sites:['s4']             ]
+ def tools = [
+                t1  :[title:'Home'         , description: 'Main tool'           , sites:['s001', 's002']       ],
+                t2  :[title:'Announcements', description: 'System Announcements', sites:['s001', 's002', 's004'] ],
+                t3  :[title:'Gradebook'    , description: 'Grades'              , sites:['s004']             ],
+                t4  :[title:'Chat'         , description: 'Chat server'         , sites:['s004']             ],
+                t5  :[title:'Resources'    , description: 'File Resources'      , sites:['s004']             ],
+                t6  :[title:'Gradebook2'   , description: 'Student Grades'      , sites:['s004']             ],
+                t7  :[title:'Forums'       , description: 'Site Forums'         , sites:['s004']             ]
 ]
 
-def siteTools = [
-        s1:['t1', 't2', 't3', 't4'],
-        s2:['t1', 't3', 't4', 't5'],
-        s3:['t1', 't3', 't6','t7'],
-        s4:['t1', 't5', 't7']
+ def siteTools = [
+        s001:['t1', 't2', 't3', 't4'],
+        s002:['t1', 't3', 't4', 't5'],
+        s003:['t1', 't3', 't6','t7'],
+        s004:['t1', 't5', 't7']
 ]
 
-// find user in map via key and password value
+// find user in map via key and password value, return valid session id
 def login(String username, String pword) {
-    def result = null
-    def user = users.get(username)
-    if (user != null) {
-        // if pwd
-        result = user.sessId;
+    def result = [:]
+    def sessionId
+    def statusMsg = "success"
+    if (username) {
+        def user = users.get(username)
+        if (user == null) {
+            statusMsg = "Username not found"
+        } else {
+            if (user.password != pword) {
+                sessionId = null
+                statusMsg = "- Bad password ${pword}"
+            } else {
+                sessionId = user.sessId;
+            }
+        }
+    } else {
+        statusMsg = "Empty username"
     }
+    result << [sessionId:sessionId]
+    result << [statusMsg:statusMsg]
     return result;
 }
 
 def getUserBySessionId(String sessId) {
-    def user = [:]
+    def result = [:]
     users.each{ k,v->
         if (v.sessId == sessId) {
-            user << [fname: v.fname, lname:v.lname]
+            result << [firstname:v.fname, v:user.lname, id:k, sites:v.sites]
+            return result
         }
     }
-    return user
+    return result
 }
 
 def getUserByUserId(String userid) {
@@ -63,25 +79,25 @@ def getUserByUserId(String userid) {
     return result
 }
 
-// get all sites valid by session id
-def getSites(String sessId) {
-    def siteList = []
-    users.each{ k,v->
-        if (v.sessId == sessId) {
-            v.sites.each{ sitekey ->
-                siteList << getSite(sitekey)
-            }
+def getSitesBySessionId(String sessId){
+    def result = []
+    def user = getUserBySessionId(sessId)
+    if (user) {
+        def sitelist = user.sites
+        sitelist.each{ usrsiteId ->
+            result << getSite(usrsiteId)
         }
     }
-    return siteList
+    return result
 }
+
 
 // get site by siteId
 def getSite(String siteId) {
     def result = [:]
     def site = sites.get(siteId)
     if (site) {
-        result << [name:site.name, id:siteId, description:site.description, type:site.stype]
+        result << [name:site.name, id:"${siteId}", description:site.description, type:site.stype]
     }
     return result
 }
@@ -99,7 +115,6 @@ def getSiteTools(String siteId) {
     def result = []
     def tools = siteTools.get(siteId)
     if (tools) {
-        print "tools ${tools}"
         tools.each{ toolId ->
             result << getTool(toolId)
 
