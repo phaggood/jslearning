@@ -1,8 +1,8 @@
-<h3>Site</h3>
+<h3>Site {{site.name}}</h3>
 <ul class="unstyled toolList">
     <li class="row {{tool.id}}-icon" ng-repeat="tool in tools">
         <div class="span11">
-            <a href="{{something}}">{{tool.title}}</a>
+            <a href="#/tool/{{ tool.id }}">{{tool.title}} : {{tool.desc}}</a>
         </div>
         <div class="span1" style="float:right;;text-align:right;">
             <i class="icon-arrow-right"></i>

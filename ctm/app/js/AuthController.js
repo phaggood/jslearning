@@ -7,13 +7,16 @@
  */
 CToolsMobile.controller('AuthController', function ($scope, $location, $routeParams, $cookies, authService) {
 
-    var currentSession = $cookies.sessionId;        // used for each call
+    var userId  = $routeParams.userId;
+    var username = $routeParams.username;
 
-    $scope.user = authService.getUser($cookies.sessionId);
+    if ($cookies.sessionId) {
+        var currentSession = $cookies.sessionId;
+        $scope.user = authService.getUser(currentSession, $routeParams.userId);
+    }
 
-    $scope.doLogin = function () {
-        var uname = $routeParams.username;
-        var pwd = $routeParams.password;
+    // if authentication works, redirect to sitelist view else go back to login
+    $scope.onLogin = function (uname, pwd) {
         var auth = authService.authenticate(uname, pwd);
         if (auth.data.sessionId != undefined) {
             $cookies.sessionId = auth.sessionId;
@@ -24,16 +27,19 @@ CToolsMobile.controller('AuthController', function ($scope, $location, $routePar
         return false;
     }
 
-    $scope.doLogout = function () {
+    $scope.onLogout = function () {
             $cookies.sessionId = null;
             $location.path('#/login/' + $routeParams.username + '/' + "Login failed");
             // invalidate session
             return false;
      }
 
-
-
      $scope.validateLogin = function (username, password) {
             return (!username && !password);
      }
+
+    $scope.cancel = function() {
+        $location.path('/');
+    }
+
 });

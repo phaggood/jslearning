@@ -60,14 +60,13 @@ def login(String username, String pword) {
 }
 
 def getUserBySessionId(String sessId) {
-    def result = [:]
+    def user = [:]
     users.each{ k,v->
         if (v.sessId == sessId) {
-            result << [firstname:v.fname, v:user.lname, id:k, sites:v.sites]
-            return result
+            user << [fname: v.fname, lname:v.lname, id:k, sites:v.sites]
         }
     }
-    return result
+    return user
 }
 
 def getUserByUserId(String userid) {
@@ -79,7 +78,8 @@ def getUserByUserId(String userid) {
     return result
 }
 
-def getSitesBySessionId(String sessId){
+
+def getSitesBySession(String sessId){
     def result = []
     def user = getUserBySessionId(sessId)
     if (user) {
@@ -90,7 +90,6 @@ def getSitesBySessionId(String sessId){
     }
     return result
 }
-
 
 // get site by siteId
 def getSite(String siteId) {

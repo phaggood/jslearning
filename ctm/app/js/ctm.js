@@ -6,30 +6,44 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var ctmConfig = function($routeProvider) {
+var CToolsMobile = angular.module('CToolsMobile', ['ngCookies']).
+    config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when('/', {
-            controller: 'SitesController',
-            templateUrl: 'view/main.html'
+            templateUrl: '/index.html'
         })
-        .when('/sites', {
-            controlller: 'SitesController',
-            templateUrl: 'view/sites.html'
-        })
-        .when('/site/:siteId', {
+        .when('/sites/:sessionId', {
             controller: 'SitesController',
-            templateUrl: 'view/site.html'
+            templateUrl: 'partials/sites.html'
+        })
+        .when('/site/:sessionId/:siteId', {
+            controller: 'SitesController',
+            templateUrl: 'partials/site.html'
+        })
+        .when('/tools/:sessionId/:siteId', {
+            controller: 'SitesController',
+            templateUrl: 'partials/tools.html'
+        })
+        .when('/tool/:toolId', {
+            controller: 'SitesController',
+            templateUrl: 'partials/tools.html'
         })
         .when('/login', {
             controller: 'AuthController',
-            templateUrl: 'view/loginForm'
+            templateUrl: 'partials/loginForm.html'
         })
-        .when('/auth/:username/:password', {
+        .when('/user/:sessionId/:userId', {
             controller: 'AuthController'
         })
         .when('/logout', {
             controller: 'AuthController'
         })
-    ; };
+        .when('/user/:sessionId/:userId', {
+            controller: 'AuthController',
+            templateUrl: 'partials/user.html'
+        })
+        .otherwise({redirectTo: '/'})
+}]);
 
-var CToolsMobile = angular.module('CToolsMobile', [ 'ngCookies']). config(CToolsMobile);
+
+

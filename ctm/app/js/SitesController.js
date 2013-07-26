@@ -8,13 +8,13 @@
  */
 CToolsMobile.controller('SitesController', function ($scope, $location, $routeParams, $cookies, siteService) {
 
-    var currentSession   = $cookies.sessionId;        // used for each call
-    var siteId = $routeParams.siteId
-
-    $scope.selectedSiteId = $routeParams.siteId;
+    var currentSession   = $cookies.sessionId;     // used for each call
+    var siteId = $routeParams.siteId;              // if siteId is set
+    var toolId = $routeParams.toolId;              // if toolId is set
 
     $scope.sites = siteService.getSites(currentSession);
-    $scope.site =  siteService.getSite(currentSession,selectedSiteId);
-    $scope.tools = siteService.getTools(currentSession, siteId);
+    $scope.site  = siteService.getSite(currentSession,$routeParams.siteId);
+    $scope.tools = siteService.getTools(currentSession, $routeParams.siteId);
+    $scope.tool  = siteService.getTool($routeParams.toolId);
 
 });
