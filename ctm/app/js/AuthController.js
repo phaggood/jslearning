@@ -5,7 +5,7 @@
  * Time: 10:22 PM
  * To change this template use File | Settings | File Templates.
  */
-CToolsMobile.controller('AuthController', function ($scope, $location, $routeParams, $cookies, authService) {
+ctm.controller('AuthController', function ($scope, $location, $routeParams, $cookies, authService) {
 
     var userId  = $routeParams.userId;
     var username = $routeParams.username;
@@ -39,7 +39,9 @@ CToolsMobile.controller('AuthController', function ($scope, $location, $routePar
      }
 
     $scope.cancel = function() {
-        $location.path('/');
+	//alert("logout");
+        $location.path('#/');
+	return false;
     }
 
 });

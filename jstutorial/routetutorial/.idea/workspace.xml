@@ -8,6 +8,10 @@
     <file path="/welcome.html" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375130830950" ignored="false" />
     <file path="/route1.html" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375130817027" ignored="false" />
     <file path="/ctm.js" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375158643917" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ctm/app/index.html" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375200287331" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ctm/app/js/AuthController.js" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375200287331" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ctm/app/js/SitesController.js" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375200287331" ignored="false" />
+    <file path="$PROJECT_DIR$/../../ctm/app/js/ctm.js" changelist="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" time="1375200287331" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,7 @@
       <file leaf-file-name="ctm.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/ctm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="0.3181818">
+            <state line="14" column="16" selection-start="404" selection-end="404" vertical-scroll-proportion="0.3181818">
               <folding />
             </state>
           </provider>
@@ -197,6 +201,23 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f0ba41fd-7f35-483b-aa3e-7b26f003aaf2" name="Default" comment="" />
@@ -311,7 +332,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/ctm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="17" selection-start="405" selection-end="405" vertical-scroll-proportion="0.3181818">
+        <state line="14" column="16" selection-start="404" selection-end="404" vertical-scroll-proportion="0.3181818">
           <folding />
         </state>
       </provider>

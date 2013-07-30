@@ -6,43 +6,22 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var CToolsMobile = angular.module('CToolsMobile', ['ngCookies']).
-    config(['$routeProvider', function($routeProvider) {
-    $routeProvider
-        .when('/', {
-            templateUrl: '/index.html'
-        })
-        .when('/sites/:sessionId', {
-            controller: 'SitesController',
-            templateUrl: 'partials/sites.html'
-        })
-        .when('/site/:sessionId/:siteId', {
-            controller: 'SitesController',
-            templateUrl: 'partials/site.html'
-        })
-        .when('/tools/:sessionId/:siteId', {
-            controller: 'SitesController',
-            templateUrl: 'partials/tools.html'
-        })
-        .when('/tool/:toolId', {
-            controller: 'SitesController',
-            templateUrl: 'partials/tools.html'
-        })
-        .when('/login', {
-            controller: 'AuthController',
-            templateUrl: 'partials/loginForm.html'
-        })
-        .when('/user/:sessionId/:userId', {
-            controller: 'AuthController'
-        })
-        .when('/logout', {
-            controller: 'AuthController'
-        })
-        .when('/user/:sessionId/:userId', {
-            controller: 'AuthController',
-            templateUrl: 'partials/user.html'
-        })
-        .otherwise({redirectTo: '/'})
+'use strict';
+
+
+// Declare app level module which depends on filters, and services
+var ctm = angular.module('ctm', ['ngCookies'])
+  .config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/', {templateUrl: 'partials/welcome.html' });
+    $routeProvider.when('/login', {templateUrl: 'partials/loginform.html', controller:'AuthController' });
+    $routeProvider.when('/logout', {templateUrl: 'partials/logout.html', controller:'AuthController' });
+    $routeProvider.when('/sites/:sessionId', {templateUrl: 'partials/sites.html', controller:'SitesController' });
+    $routeProvider.when('/site/:sessionId/:siteId', {templateUrl: 'partials/site.html', controller:'SitesController' });
+    $routeProvider.when('/tools/:sessionId/:siteId', {templateUrl: 'partials/tools.html', controller:'SitesController'});
+    $routeProvider.when('/tool/:toolId', {templateUrl: 'partials/tool.html', controller:'SitesController' });
+    $routeProvider.when('/user/:sessionId/:userId', {templateUrl: 'partials/user.html', controller:'AuthController' });
+    $routeProvider.when('/tool/:toolId', {templateUrl: 'partials/tool.html', controller:'SitesController' });
+    $routeProvider.otherwise({redirectTo: '/'})
 }]);
 
 

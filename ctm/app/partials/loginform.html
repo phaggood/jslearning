@@ -1,9 +1,31 @@
-<form name='login'>
-    <label for='username'>username:</label>
-    <text id='username' ng-model='username'></text>
-    <label for='password'>password:</label>
-    <text id='password' type='password' ng-model='pwd_model'></text>
-    <button ng-click='cancel()'>Cancel</button>
-    <button ng-click='onLogin()' ng-
-            disabled='!validate_login'>Login</button>
+<form class="form-horizontal" method="POST">
+    <fieldset>
+        <div id="legend">
+            <legend class="">Login</legend>
+        </div>
+        <div class="control-group">
+            <!-- Username -->
+            <label class="control-label"  for="username">Username</label>
+            <div class="controls">
+                <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
+            </div>
+        </div>
+
+        <div class="control-group">
+            <!-- Password-->
+            <label class="control-label" for="password">Password</label>
+            <div class="controls">
+                <input type="password" id="password" name="password" placeholder="" class="input-xlarge">
+            </div>
+        </div>
+
+
+        <div class="control-group">
+            <!-- Button -->
+            <div class="controls">
+                <button class="btn btn-success">Login</button>
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            </div>
+        </div>
+    </fieldset>
 </form>

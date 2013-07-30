@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html ng-app="CToolsMobile">
+<html ng-app="ctm">
     <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-cookies.min.js"></script>
-        <script src='js/ctm.js'>
-        </script>
-        <script src='js/SitesController.js'>
-        </script>
-        <script src='js/AuthController.js'>
-        </script>
-        <link rel='stylesheet' href='css/styles.css'>
-        <!-- link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" -->
-        <!-- script src="js/bootstrap/js/bootstrap.min.js" -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-cookies.js"></script>
+        <script src='js/ctm.js'></script>
+	    <script src='js/factory.js'></script>
+        <script src='js/AuthController.js'></script>
+        <!-- script src='js/SitesController.js'></script -->
+
+        <link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <!-- script src="js/bootstrap/js/bootstrap.min.js"></script -->
         <title>CTools Mobile</title>
     </head>
     <body>
-
-    <h2>Welcome to site Manager</h2><br>
-    <a href="#/login">Login</a>
-
+    <div ng-view>
+        <p>Loading...</p>
+    </div>
     </body>
 </html>
