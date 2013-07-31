@@ -11,11 +11,10 @@
 ctm.factory('siteService', function($http) {
     var data;
     return {
-        // return all sites beloging to this session
         getSites: function(sessionId) {
             var params = "?sessionId=" + sessionId;
             return $http.get('http://localhost:9090/sites.groovy'+params).then( function(result) {
-                return result.data;
+                return result.data.Data;
             });
         },
         // get site for session by siteid
@@ -37,7 +36,7 @@ ctm.factory('siteService', function($http) {
             //that resolves to whatever value is returned in it's
             //callback argument, we can return that.
             return $http.get('http://localhost:9090/sitetools.groovy'+params).then(function(result) {
-                return result.data;
+                return result.data.Data;
             });
         },
         // get tool by toolId
@@ -55,8 +54,9 @@ ctm.factory('siteService', function($http) {
 });
 
 ctm.factory('authService', function($http) {
+    var result;
     return {
-        authentiate: function(uname,pwd) {
+        authenticate: function(uname,pwd) {
             var params = "?username=" + uname + "&password="+pwd;
 
             //since $http.get returns a promise,
@@ -64,7 +64,7 @@ ctm.factory('authService', function($http) {
             //that resolves to whatever value is returned in it's
             //callback argument, we can return that.
             return $http.get('http://localhost:9090/auth.groovy'+params).then(function(result) {
-                return result.data;
+                return result;
             });
         },
 

@@ -13,8 +13,8 @@ ctm.controller('SitesController', function ($scope, $location, $routeParams, $co
     var toolId = $routeParams.toolId;              // if toolId is set
 
     $scope.sites = siteService.getSites(currentSession);
-    $scope.site  = siteService.getSite(currentSession,$routeParams.siteId);
-    $scope.tools = siteService.getTools(currentSession, $routeParams.siteId);
-    $scope.tool  = siteService.getTool($routeParams.toolId);
+    //$scope.site  = siteService.getSite(currentSession,$routeParams.siteId);
+    //$scope.tools = siteService.getTools(currentSession, $routeParams.siteId);
+    //$scope.tool  = siteService.getTool($routeParams.toolId);
 
 });
