@@ -7,8 +7,7 @@
  */
 ctm.controller('AuthController', function ($scope, $location, $routeParams, $cookies, authService) {
 
-    var userId  = $routeParams.userId;
-    var username = $routeParams.username;
+    var userId = $routeParams.userId;
 
     if ($cookies.sessionId) {
         var currentSession = $cookies.sessionId;
@@ -16,32 +15,35 @@ ctm.controller('AuthController', function ($scope, $location, $routeParams, $coo
     }
 
     // if authentication works, redirect to sitelist view else go back to login
-    $scope.onLogin = function (uname, pwd) {
-        var auth = authService.authenticate(uname, pwd);
-        if (auth.data.sessionId != undefined) {
-            $cookies.sessionId = auth.sessionId;
-            $location.path('#/sites/' + $cookies.sessionId);
-        } else {
-            $location.path('#/login/' + $routeParams.username + '/' + "Login failed");
-        }
-        return false;
-    }
+    $scope.onLogin = function () {
+        authService.authenticate($scope.username, $scope.userpass).then(function (data) {
+            if (typeof data != 'undefined') {
+                $cookies.sessionId = data.data.Data.sessionId;
+                var newLoc =  '#/sites/' + $cookies.sessionId;
+                console.log(newLoc);
+                $location.path(newLoc);
+            } else {
+                $location.path('#/login/' + $routeParams.username + '/' + "Login failed");
+            }
+            return false;
+        });
+    };
 
     $scope.onLogout = function () {
-            $cookies.sessionId = null;
-            $location.path('#/login/' + $routeParams.username + '/' + "Login failed");
-            // invalidate session
-            return false;
-     }
+        $cookies.sessionId = null;
+        $location.path('#/login/' + $routeParams.username + '/' + "Logged out");
+        // invalidate session
+        return false;
+    };
 
-     $scope.validateLogin = function (username, password) {
-            return (!username && !password);
-     }
+    $scope.validateLogin = function (username, password) {
+        return (!username && !password);
+    };
 
-    $scope.cancel = function() {
-	//alert("logout");
+    $scope.cancel = function () {
+        //alert("logout");
         $location.path('#/');
-	return false;
+        return false;
     }
 
 });

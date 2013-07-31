@@ -4,10 +4,10 @@
     <list default="true" id="5ece76cd-b67b-43ac-bc8b-34fbef427222" name="Default" comment="" />
     <ignored path="ctm.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375207177115" ignored="false" />
-    <file path="/AuthController.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375200747486" ignored="false" />
+    <file path="/index.html" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375238855201" ignored="false" />
+    <file path="/AuthController.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375240829117" ignored="false" />
     <file path="/SitesController.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375200786075" ignored="false" />
-    <file path="/factory.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375206958345" ignored="false" />
+    <file path="/factory.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375240192491" ignored="false" />
     <file path="/services.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1374677895913" ignored="false" />
     <file path="/sites.groovy" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1374787895286" ignored="false" />
     <file path="/site.groovy" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1374782708855" ignored="false" />
@@ -25,7 +25,7 @@
     <file path="/tool.html" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1374851052767" ignored="false" />
     <file path="/ctm.js" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375200726868" ignored="false" />
     <file path="/Dummy.txt" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375125929021" ignored="false" />
-    <file path="/loginform.html" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375207551994" ignored="false" />
+    <file path="/loginform.html" changelist="5ece76cd-b67b-43ac-bc8b-34fbef427222" time="1375234857416" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <file leaf-file-name="ctm.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/ctm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="109" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0">
+            <state line="12" column="18" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -57,7 +57,7 @@
       <file leaf-file-name="err.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/err.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="18" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.625">
+            <state line="1" column="18" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="SitesController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/SitesController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+            <state line="18" column="6" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +75,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="70" selection-start="608" selection-end="608" vertical-scroll-proportion="-6.875">
+            <state line="8" column="52" selection-start="439" selection-end="439" vertical-scroll-proportion="-5.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="welcome.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/welcome.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="65" vertical-scroll-proportion="-0.0">
+            <state line="0" column="0" selection-start="0" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,7 +93,7 @@
       <file leaf-file-name="loginform.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/partials/loginform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="58" selection-start="992" selection-end="992" vertical-scroll-proportion="-16.25">
+            <state line="19" column="71" selection-start="861" selection-end="861" vertical-scroll-proportion="-11.875">
               <folding />
             </state>
           </provider>
@@ -102,7 +102,7 @@
       <file leaf-file-name="AuthController.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/js/AuthController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="6" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.76019776">
+            <state line="23" column="37" selection-start="920" selection-end="920" vertical-scroll-proportion="0.32755905">
               <folding />
             </state>
           </provider>
@@ -111,25 +111,16 @@
       <file leaf-file-name="factory.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/factory.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="3" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.0">
+            <state line="13" column="34" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/filters.js">
+      <file leaf-file-name="sites.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/partials/sites.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/partials/site.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="116" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="18" column="27" selection-start="388" selection-end="388" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
@@ -155,11 +146,11 @@
         <option value="$PROJECT_DIR$/app/partials/main.html" />
         <option value="$PROJECT_DIR$/app/partials/welcome.html" />
         <option value="$PROJECT_DIR$/app/js/filters.js" />
-        <option value="$PROJECT_DIR$/app/js/SitesController.js" />
         <option value="$PROJECT_DIR$/app/js/ctm.js" />
-        <option value="$PROJECT_DIR$/app/js/factory.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/partials/loginform.html" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/js/SitesController.js" />
+        <option value="$PROJECT_DIR$/app/js/factory.js" />
         <option value="$PROJECT_DIR$/app/js/AuthController.js" />
       </list>
     </option>
@@ -168,7 +159,7 @@
     <option name="x" value="43" />
     <option name="y" value="22" />
     <option name="width" value="1310" />
-    <option name="height" value="957" />
+    <option name="height" value="806" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -196,6 +187,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,7 +272,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -325,13 +316,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="22" width="1310" height="957" extended-state="0" />
+    <frame x="43" y="22" width="1310" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2859363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2859363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -429,49 +420,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/groovy/user.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/sites.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="27" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/partials/site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="116" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/SitesController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="32" column="25" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/err.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="18" selection-start="1" selection-end="1" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/ctm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="109" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.0">
+        <state line="1" column="18" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -483,30 +437,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/factory.js">
+    <entry file="file://$PROJECT_DIR$/app/js/ctm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="3" selection-start="2331" selection-end="2331" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="70" selection-start="608" selection-end="608" vertical-scroll-proportion="-6.875">
+        <state line="12" column="18" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/partials/loginform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="58" selection-start="992" selection-end="992" vertical-scroll-proportion="-16.25">
+        <state line="19" column="71" selection-start="861" selection-end="861" vertical-scroll-proportion="-11.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="52" selection-start="439" selection-end="439" vertical-scroll-proportion="-5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="116" selection-start="388" selection-end="388" vertical-scroll-proportion="0.26025236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="0.09118541">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partials/sites.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="27" selection-start="388" selection-end="388" vertical-scroll-proportion="-11.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="34" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/SitesController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="837" selection-end="837" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/js/AuthController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="6" selection-start="1374" selection-end="1374" vertical-scroll-proportion="0.76019776">
+        <state line="23" column="37" selection-start="920" selection-end="920" vertical-scroll-proportion="0.32755905">
           <folding />
         </state>
       </provider>
