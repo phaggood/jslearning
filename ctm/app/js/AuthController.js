@@ -17,15 +17,14 @@ ctm.controller('LoginCtl', function ($scope, $location, $routeParams, $cookies, 
     // if authentication works, redirect to sitelist view else go back to loginform.html
     $scope.onLogin = function () {
         authService.authenticate($scope.username, $scope.userpass).then(function (data) {
-            if (typeof data != 'undefined') {
-                $cookies.sessionId = data.data.Data.sessionId;
+            if (data.status == '200') {
+                $cookies.sessionId = data.sessionId;
                 var newLoc =  '#/sites';
                 console.log("To sites at " + newLoc);
                 window.location=newLoc;
                 //$scope.$apply();
             } else {
-                window.location='/login/homepage'
-                $location.path('#/loginfail');
+                window.location='#/loginfail';
                 //$scope.$apply();
             }
             //return false;

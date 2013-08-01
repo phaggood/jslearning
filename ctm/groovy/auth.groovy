@@ -16,6 +16,12 @@ def login = false
 // attempt to match username and pwd from list of users, return valid session if found
 def result = gData.login(username, password)
 
+if (result.sessionId == null) {
+    status = "401"
+}  else {
+    status = "200"
+}
+
 def root = jsonBuilder {
     Header {
         "Typ" "update"
@@ -24,10 +30,11 @@ def root = jsonBuilder {
         "Date" new Date().format("dd.MM.yyyy HH:mm")
     }
 
-    Data (
+    data (
          ({
-            statusMsg result.statusMsg
-            sessionId result.sessionId
+            status      result.statusMsg
+            sessionId   result.sessionId
+            status      status
         })
     )
 
