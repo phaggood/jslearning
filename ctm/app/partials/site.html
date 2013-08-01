@@ -1,6 +1,8 @@
 <h3>Site {{site.name}}</h3>
-<ul class="unstyled toolList">
-    <li class="row {{tool.id}}-icon" ng-repeat="tool in tools">
+<div class="panel" style="border: 2px solid black" width="40%">
+    <div class="panel-heading">Tools</div>
+<ul class="unstyled toolList" ng-controller="ToolsCtl" class="list-group">
+    <li class="row {{tool.id}}-icon" ng-repeat="tool in tools" class="list-group-item">
         <div class="span11">
             <a href="#/tool/{{ tool.id }}">{{tool.title}} : {{tool.desc}}</a>
         </div>
@@ -9,3 +11,6 @@
         </div>
     </li>
 </ul>
+    <div class="panel-footer"><a href="#/sites">Back</a></div>
+
+</div>

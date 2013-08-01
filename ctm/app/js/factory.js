@@ -12,6 +12,7 @@ ctm.factory('siteService', function($http) {
     var data;
     return {
         getSites: function(sessionId) {
+            console.log("sites for " + sessionId)
             var params = "?sessionId=" + sessionId;
             return $http.get('http://localhost:9090/sites.groovy'+params).then( function(result) {
                 return result.data.Data;
@@ -20,11 +21,12 @@ ctm.factory('siteService', function($http) {
         // get site for session by siteid
         getSite: function(sessionId, siteId) {
             var params = "?sessionId=" + sessionId + "&siteId="+siteId;
+            console.log("site " + params)
             //since $http.get returns a promise,
             //and promise.then() also returns a promise
             //that resolves to whatever value is returned in it's
             //callback argument, we can return that.
-            return $http.get('http://localhost:9090/site.groovy'+params).then(function (result) {
+            return $http.get('http://localhost:9090/sites.groovy'+params).then(function (result) {
                 return result.data;
             });
         },
@@ -64,6 +66,7 @@ ctm.factory('authService', function($http) {
             //that resolves to whatever value is returned in it's
             //callback argument, we can return that.
             return $http.get('http://localhost:9090/auth.groovy'+params).then(function(result) {
+                // if (result.status == 200) return (invalid session) else return result.sesionId
                 return result;
             });
         },
