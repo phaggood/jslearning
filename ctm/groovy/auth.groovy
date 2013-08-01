@@ -13,7 +13,7 @@ def username = params.username
 def password = params.password
 def login = false
 
-// attempt to match username and pwd from list of users, return valid session if found
+// attempt to match username and pwd from list of users, return valid session and status = 200 if found
 def result = gData.login(username, password)
 
 if (result.sessionId == null) {

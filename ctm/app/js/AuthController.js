@@ -8,6 +8,8 @@
 ctm.controller('LoginCtl', function ($scope, $location, $routeParams, $cookies, authService) {
 
     var userId = $routeParams.userId;
+    $scope.usrname = $routeParams.usrname;
+    $scope.statusMsg = $routeParams.statMsg;
 
     if ($cookies.sessionId) {
         var currentSession = $cookies.sessionId;
@@ -24,7 +26,8 @@ ctm.controller('LoginCtl', function ($scope, $location, $routeParams, $cookies, 
                 window.location=newLoc;
                 //$scope.$apply();
             } else {
-                window.location='#/loginfail';
+                var logURL = '#/login/'+ $scope.username + '/' + "Bad credentials for user:";
+                window.location=logURL ;
                 //$scope.$apply();
             }
             //return false;
