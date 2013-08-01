@@ -1,2 +1,8 @@
 logs/*
+../.DS_Store
+../.dropbox
+"../Icon\r"
+../basic/
+../jstutorial/.dropbox
+../temp
 !.gitkeep
