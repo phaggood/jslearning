@@ -30,7 +30,7 @@ def root = jsonBuilder {
         "Date" new Date().format("dd.MM.yyyy HH:mm")
     }
 
-    data (
+    Data (
          ({
             status      result.statusMsg
             sessionId   result.sessionId

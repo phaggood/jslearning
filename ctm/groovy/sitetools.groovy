@@ -28,11 +28,7 @@ def root = jsonBuilder {
 
     Data (
 
-        tools.each ({ tool ->
-            "id" tool.id
-            "name" tool.title
-            "desc" tool.description
-        })
+        tools
     )
 }
 // return json result

@@ -8,13 +8,17 @@ def jsonWriter = new StringWriter()
 def jsonBuilder = new StreamingJsonBuilder(jsonWriter)
 def siteId = params.siteId
 def sessionId = params.sessionId
-
+def statusCode = "200"
 def sites = []
 
 if (siteId) {
     sites << gData.getSite(siteId)
 }  else {
     sites = gData.getSitesBySession(sessionId)
+}
+
+def toolCount(siteId) {
+    return gData.getToolCount(siteId)
 }
 
 def root = jsonBuilder {
@@ -25,15 +29,12 @@ def root = jsonBuilder {
         "Date" new Date().format("dd.MM.yyyy HH:mm")
     }
 
-    Data (
-
-        sites.each ({ site->
-            "id" site.id
-            "name" site.name
-            "desc" site.description
-            "type" site.type
-        })
+    Sites (
+        sites
     )
+    Count (
+      sites.size()
+     )
 }
 
 // return json result

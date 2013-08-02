@@ -91,12 +91,19 @@ def getSitesBySession(String sessId){
     return result
 }
 
+def getToolCount(String siteId) {
+    def tools = siteTools.get(siteId)
+    if(tools) return tools.size()
+    else return 0
+
+}
+
 // get site by siteId
 def getSite(String siteId) {
     def result = [:]
     def site = sites.get(siteId)
     if (site) {
-        result << [name:site.name, id:"${siteId}", description:site.description, type:site.stype]
+        result << [name:site.name, id:"${siteId}", description:site.description, type:site.stype, toolCount: getToolCount(siteId)]
     }
     return result
 }
@@ -109,7 +116,6 @@ def getTool(String toolId) {
     }
     return result
 }
-
 def getSiteTools(String siteId) {
     def result = []
     def tools = siteTools.get(siteId)

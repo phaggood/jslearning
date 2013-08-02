@@ -15,7 +15,7 @@ ctm.factory('siteService', function($http) {
             console.log("sites for " + sessionId)
             var params = "?sessionId=" + sessionId;
             return $http.get('http://localhost:9090/sites.groovy'+params).then( function(result) {
-                return result.data.Data;
+                return result.data.Sites;
             });
         },
         // get site for session by siteid
@@ -67,7 +67,7 @@ ctm.factory('authService', function($http) {
             //callback argument, we can return that.
             return $http.get('http://localhost:9090/auth.groovy'+params).then(function(result) {
                 // if (result.status == 200) return (invalid session) else return result.sesionId
-                return result.data.data;
+                return result.data.Data;
             });
         },
 
