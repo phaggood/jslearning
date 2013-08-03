@@ -1,16 +1,21 @@
-<h3>Site {{site.name}}</h3>
-<div class="panel" style="border: 2px solid black" width="40%">
-    <div class="panel-heading">Tools</div>
-<ul class="unstyled toolList" ng-controller="ToolsCtl" class="list-group">
-    <li class="row {{tool.id}}-icon" ng-repeat="tool in tools" class="list-group-item">
-        <div class="span11">
-            <a href="#/tool/{{ tool.id }}">{{tool.title}} : {{tool.desc}}</a>
-        </div>
-        <div class="span1" style="float:right;;text-align:right;">
-            <i class="icon-arrow-right"></i>
-        </div>
-    </li>
-</ul>
-    <div class="panel-footer"><a href="#/sites">Back</a></div>
+    <div class="panel-heading">Site {{site.title}}</div>
+    <div ng-controller="ToolsCtl">
+    <ul class="thumbnails">
 
-</div>
+        <li class="span5 clearfix" ng-repeat="tool in tools">
+            <div class="thumbnail clearfix">
+                <img src="img/tools/{{ tool.thumbnail }}" alt="ALT NAME" class="pull-left span2 clearfix" style='margin-right:10px'>
+                <div class="caption" class="pull-left">
+                    <a href="#/{{ tool.name }}.html" class="btn btn-primary icon  pull-right">Go</a>
+                    <h4>
+                        <a href="#/{{ tool.name }}" >{{tool.title}}</a>
+                    </h4>
+                    <small><b>{{ tool.description }}
+                        <div class="span1" style="float:right;;text-align:right;">
+                            <i class="icon-arrow-right"></i>
+                        </div>
+                </div>
+            </div>
+    </ul>
+    </div>
+    <div class="panel-footer"><a href="#/sites">Back</a></div>

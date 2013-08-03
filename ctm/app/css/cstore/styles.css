@@ -1,0 +1,161 @@
+﻿body {
+    padding: 65px;
+}
+
+.view {
+
+}
+
+.white {
+    color: white;
+}
+
+.white:hover{
+    color: white;
+}
+
+.card {
+    background-color:#fff;
+    border: 1px solid black;
+    height:100px;
+    width: 225px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cardHeader {
+    background-color: #006dcc;
+    font-size:14pt;
+    color:white;
+    padding:5px;
+}
+
+.cardClose {
+    color: white;
+    font-weight:bold;
+    margin-right:5px;
+}
+
+.cardContainer {
+    width:95%;
+}
+
+.cardBody {
+    padding-left: 5px;
+}
+
+.cardBodyRight {
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.cardImage {
+    height:50px;width:50px;margin-top:10px;
+}
+
+.lastRow {
+    background-color: #ccc;
+}
+
+.indent {
+    margin-left:5px;
+}
+
+.ordersTable {
+    width:800px;
+}
+
+.orders th, .customerOrders th {
+    width:25%;
+    cursor: pointer;
+}
+
+.ordersTable tr:first-child th {
+    background-color: #006dcc;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+#submitCustomer {
+    margin-left:50px;
+    margin-top: -8px;
+}
+
+footer {
+    margin-top:10px;
+    font-weight: bold;
+}
+
+
+/* Bootstrap overrides */
+.navbar-inner {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.navbar-fixed-top .navbar-inner,
+.navbar-static-top .navbar-inner {
+  -webkit-box-shadow: 0 1px 00px rgba(0, 0, 0, 0);
+     -moz-box-shadow: 0 1px 00px rgba(0, 0, 0, 0);
+          box-shadow: 0 1px 00px rgba(0, 0, 0, 0);
+}
+
+.navbar .nav {
+    margin-left:50px;
+    margin-top:15px;
+}
+
+.close {
+    opacity: 1.0;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+
+
+/* Animations */
+.view-enter, .view-leave {
+  -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.view-enter {
+  opacity:0;
+  left:100px;
+  width:100%;
+  position:absolute;
+}
+.view-enter.view-enter-active {
+  left:0;
+  opacity:1;
+}
+
+.view-leave {
+  position:absolute;
+  left:0;
+  width:100%;
+  opacity:1;
+}
+
+.view-leave.view-leave-active {
+  left:-100px;
+  opacity:0;
+}
+
+body.skip-animations * {
+  -webkit-transition:none!important;
+  -moz-transition:none!important;
+  -o-transition:none!important;
+  transition:none!important;
+}
+
+/* ng-cloak */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng.ng-cloak {
+    display: none;
+}

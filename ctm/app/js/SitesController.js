@@ -7,12 +7,19 @@
  * // http://www.benlesh.com/2013/02/angularjs-creating-service-with-http.html
  * http://docs.angularjs.org/guide/dev_guide.mvc.understanding_controller
  */
-ctm.controller('SitesCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
+ctm.controller('SitesCtl', function ($scope, $location, $routeParams, $cookies, siteService, authService) {
 
     var currentSession   = $cookies.sessionId;     // used for each call
+    //var currentuser =  function () {
+    //    var usr = authService.getSessionUser(currentSession);
+    //    return usr.Data.lastname + ", " + usr.Data.lastname;
+    //};
+    $scope.sites =  siteService.getSites(currentSession);
 
     // sites.html
-    $scope.sites = siteService.getSites(currentSession);
+    //$scope.sites = currentsites;
+    //$scope.currentuser = currentuser;
+
 
 });
 

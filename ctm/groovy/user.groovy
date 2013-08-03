@@ -3,7 +3,6 @@ import groovy.json.*
 def gData = new GData();
 
 response.setContentType('application/json')
-
 def jsonWriter = new StringWriter()
 def jsonBuilder = new StreamingJsonBuilder(jsonWriter)
 

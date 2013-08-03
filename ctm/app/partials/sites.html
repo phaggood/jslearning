@@ -1,32 +1,23 @@
-<div class="panel" >
-    <table class="table">
-    <thead>
-        <th>
-            Site name
-        </th>
-        <th>
-            Type
-        </th>
-        <th>
-            Description
-        </th>
-    </thead>
-    <tbody>
-        <tr ng-repeat="site in sites | orderBy:'name'" class="{{site.id}}">
-            <td>
-                <a href="#/site/{{ site.id }}">{{site.name}}</a>
-            </td>
-            <td>
-                {{site.type}}
-            </td>
-            <td>
-                {{site.description}}
-            </td>
-            <td><span class="badge">{{ site.toolCount }}</span></td>
-        </tr>
-    </tbody>
-</table>
+<ul class="breadcrumb">
+    <li ng-repeat="bc in breadcrumbs">
+      <a href="#{{ bc.link }}">{{ bc.name }}</a></li>
+</ul>
+<h3>Sites for user {{ currentuser }}</h3>
+<ul class="thumbnails">
+    <li class="span5 clearfix" ng-repeat="site in sites">
+        <div class="thumbnail clearfix">
+            <img src="img/{{ site.thumbnail }}.jpeg" alt="ALT NAME" class="pull-left span2 clearfix" style='margin-right:10px'>
+            <div class="caption" class="pull-left">
+                <a href="#/site/{{ site.id }}" class="btn btn-primary icon  pull-right">Tools</a>
+                <h4>
+                    <a href="#/site/{{ site.id }}" >{{site.name}}</a>
+                </h4>
+                <small><b>{{ site.description }}</small><span class="badge">{{ site.toolCount }}</span>
 
-    <div class="panel-footer"><a href="#/logout">Logout</a></div>
 
-</div>
+            </div>
+        </div>
+    </li>
+</ul>
+<a href="#/logout">Logout</a>
+<!-- http://bootsnipp.com/snipps/select-users -->

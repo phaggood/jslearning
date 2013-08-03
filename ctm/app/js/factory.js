@@ -83,6 +83,19 @@ ctm.factory('authService', function($http) {
             });
         },
 
+        // get the user by current session
+        // this should be combined with getUser and test for userID being passed
+        getSessionUser: function(sessId) {
+        var params = "?sessionId=" + sessId
+        //since $http.get returns a promise,
+        //and promise.then() also returns a promise
+        //that resolves to whatever value is returned in it's
+        //callback argument, we can return that.
+        $http.get('http://localhost:9090/user.groovy'+params).then(function(result) {
+            return result.data;
+        });
+    },
+
         // expire ths session on the server
         logout: function(sessionId) {
             var params = "?sessionId=" + sessionId;
