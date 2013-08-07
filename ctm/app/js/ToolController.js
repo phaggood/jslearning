@@ -7,7 +7,7 @@
  */
 
 
-ctm.controller('GradebookCtl', function ($scope, $location, $routeParams, $cookies,  authService) {
+app.controller('GradebookCtl', function ($scope, $location, $routeParams, $cookies,  authService) {
 
     var currentSession   = $cookies.sessionId;     // used for each call
 
@@ -20,7 +20,7 @@ ctm.controller('GradebookCtl', function ($scope, $location, $routeParams, $cooki
 
 });
 
-ctm.controller('ChatCtl', function ($scope, $location, $routeParams, $cookies,  authService) {
+app.controller('ChatCtl', function ($scope, $location, $routeParams, $cookies,  authService) {
 
     var currentSession   = $cookies.sessionId;     // used for each call
 

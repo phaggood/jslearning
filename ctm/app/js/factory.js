@@ -8,7 +8,7 @@
 // http://www.benlesh.com/2013/02/angularjs-creating-service-with-http.html
 
 // route params and test http://docs.angularjs.org/tutorial/step_11
-ctm.factory('siteService', function($http) {
+app.factory('siteService', function($http) {
     var data;
     return {
         getSites: function(sessionId) {
@@ -55,7 +55,7 @@ ctm.factory('siteService', function($http) {
     }
 });
 
-ctm.factory('authService', function($http) {
+app.factory('authService', function($http) {
     var result;
     return {
         authenticate: function(uname,pwd) {

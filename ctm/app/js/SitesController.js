@@ -7,23 +7,22 @@
  * // http://www.benlesh.com/2013/02/angularjs-creating-service-with-http.html
  * http://docs.angularjs.org/guide/dev_guide.mvc.understanding_controller
  */
-ctm.controller('SitesCtl', function ($scope, $location, $routeParams, $cookies, siteService, authService) {
-
+app.controller('SitesCtl', function ($scope, $location, $routeParams, $cookies, siteService, authService) {
     var currentSession   = $cookies.sessionId;     // used for each call
-    //var currentuser =  function () {
-    //    var usr = authService.getSessionUser(currentSession);
-    //    return usr.Data.lastname + ", " + usr.Data.lastname;
-    //};
+    var currentUser = authService.getSessionUser(currentSession);
     $scope.sites =  siteService.getSites(currentSession);
-
-    // sites.html
-    //$scope.sites = currentsites;
-    //$scope.currentuser = currentuser;
-
+    $scope.currentuser = currentUser;
+    var oldVal = currentUser;
+    $window.scope = $scope
+    $scope.$watch(authService.getSessionUser, function(currentUser, oldVal, scope) {
+        if (currentUser && currentUser !== oldVal) {
+            $scope.currentuser = currentUser;
+        }
+    });
 
 });
 
-ctm.controller('SiteCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
+app.controller('SiteCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
 
     var currentSession   = $cookies.sessionId;     // used for each call
     var siteId = $routeParams.siteId;              // if siteId is set
@@ -34,7 +33,7 @@ ctm.controller('SiteCtl', function ($scope, $location, $routeParams, $cookies, s
 
 });
 
-ctm.controller('ToolsCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
+app.controller('ToolsCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
 
     var currentSession   = $cookies.sessionId;     // used for each call
     var siteId = $routeParams.siteId;              // if siteId is set
@@ -44,7 +43,7 @@ ctm.controller('ToolsCtl', function ($scope, $location, $routeParams, $cookies, 
 
 });
 
-ctm.controller('ToolCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
+app.controller('ToolCtl', function ($scope, $location, $routeParams, $cookies, siteService) {
 
     var currentSession   = $cookies.sessionId;     // used for each call
     var toolId = $routeParams.toolId;              // if toolId is set

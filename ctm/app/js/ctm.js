@@ -10,8 +10,8 @@
 
 
 // Declare app level module which depends on filters, and services
-var ctm;
-ctm = angular.module('ctm', ['ngCookies'])
+var app;
+angular.module('ctm', ['ngCookies'])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/', {templateUrl: 'partials/welcome.html' });
         $routeProvider.when('/login', {templateUrl: 'partials/loginform.html', controller: 'LoginCtl' });

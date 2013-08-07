@@ -5,7 +5,7 @@
  * Time: 10:22 PM
  * To change this template use File | Settings | File Templates.
  */
-ctm.controller('LoginCtl', function ($scope, $location, $routeParams, $cookies, authService) {
+app.controller('LoginCtl', function ($scope, $location, $routeParams, $cookies, authService) {
 
     var userId = $routeParams.userId;
     $scope.usrname = $routeParams.usrname;
@@ -55,7 +55,7 @@ ctm.controller('LoginCtl', function ($scope, $location, $routeParams, $cookies, 
 
 });
 
-ctm.controller('UserCtl', function ($scope, $location, $routeParams, $cookies, authService) {
+app.controller('UserCtl', function ($scope, $location, $routeParams, $cookies, authService) {
 
     var userId = $routeParams.userId;
 
